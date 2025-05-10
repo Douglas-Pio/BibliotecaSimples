@@ -2,17 +2,17 @@
 Projeto de uma biblioteca simples para uma atividade de Versionamento Semântico com Git e Java
 ## VERSÕES
 
-## [2.0.0] - 2025-05-04
+## [2.0.0] - 2025-05-10
 - **feat!**: Adiciona suporte a ISBN, alterando a interface de adição dos livros (breaking change).
 - **feat**: Adiciona busca por ISBN.
 
-## [1.1.1] - 2025-05-04
+## [1.1.1] - 2025-05-10
 - **fix**: Adiciona documentação para busca case-insensitive.
 
-## [1.1.0] - 2025-05-04
+## [1.1.0] - 2025-05-10
 - **feat**: Adiciona busca de livros por autor.
 
-## [1.0.0] - 2025-05-04
+## [1.0.0] - 2025-05-10
 -- **feat**: Implementa funcionalidade inicial de adicionar e listar livros
 
 ## Changelog
