@@ -5,8 +5,8 @@ import java.util.stream.Collectors;
 public class Biblioteca {
     private List<Livro> livros = new ArrayList<>();
 
-    public void adicionarLivro(String titulo, String autor) {
-        livros.add(new Livro(titulo, autor));
+    public void adicionarLivro(String isbn,String titulo, String autor) {
+        livros.add(new Livro(titulo, autor,isbn));
     }
 
     public List<Livro> listarLivros() {
@@ -26,5 +26,10 @@ public class Biblioteca {
         .filter(livro -> livro.getAutor().equalsIgnoreCase(autor))
         .collect(Collectors.toList());
 }
-
+public Livro buscarPorIsbn(String isbn) {
+    return livros.stream()
+        .filter(livro -> livro.getIsbn().equals(isbn))
+        .findFirst()
+        .orElse(null);
+}
 }
